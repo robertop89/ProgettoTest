@@ -1,7 +1,7 @@
 package it.uniroma2.TestIngresso.DAO;
 
 import com.mysql.jdbc.Connection;
-
+//còkajsbfibsfòalcna
 public class DAO {
 	// visibilità package per tutte le variabili
 	static Connection conn = null;
