@@ -22,10 +22,15 @@ public class TestAllenamentoFactory {
 		MateriaDAO md = DAOFactory.createMateria();
 		DomandaDAO dd = DAOFactory.createDomanda();
 		
+		// Se c'è un errore di connessione con il DB restituisce l'errore "00"
+		if(dd.countDomandeMateria(materia) == -1){
+			test.setMateria("Errore 00");
+			return test;
+		}
 		// Se non ci sono sufficienti domande restituisce un oggetto TestAllenamento vuoto
 		// con materia "00"
 		if(numero > dd.countDomandeMateria(materia)){
-			test.setMateria("00");
+			test.setMateria("Errore 01");
 			return test;
 		}
 		test.setMateria(md.selectById(materia));
