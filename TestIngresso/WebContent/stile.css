@@ -1,0 +1,109 @@
+body {
+	padding: 0;
+	margin: 0;
+	}
+#telaio {
+	width:100%;
+	height:400px;
+	margin: 0px;
+	
+	}
+#testata {
+	font-size: 150%;
+	text-align: center;
+	}
+
+#testata, #fondo {
+	padding:0.5em;
+	color:white;
+	background-color: rgb(34, 110, 111);
+	clear:left;
+	}
+#sinistro {
+	text-family:verdana;
+	float:left;
+	width:25%;
+	margin: 0px;
+	padding:5%;
+	}
+
+#centrale {
+	margin-left: 30%;
+	height: 400px;
+	border-left:1px solid gray;
+	background-color: #e0ffff;
+	padding:2%;
+	}
+#form{
+	position:relative;
+	top: 20%;
+	padding-left: 25%;
+}
+
+#domanda{
+	text-align:"center";
+	font-size:150%;
+	margin-top:2%;
+	padding:2%;
+	font-family:verdana;
+}
+#radio{
+	font-size:125%;
+	margin-left:20%;
+}
+
+#message{
+	position:relative;
+	top: 15%;
+	left: 25%;
+	width: 250px;
+	text-align: left;
+	color: black;
+	background-color: #ff82a0;
+}
+#unico{
+	height: 400px;
+	text-align: center;
+}
+#link{
+	font-size:100%;
+	font-family:sans-serif;
+	padding:10%;
+}
+#table{
+	margin-left: 10%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+#table2{
+	margin-left: 25%;
+	margin-bottom: 3%;
+}
+#buttonInizia{	
+ background-image: url('img/inizia.png');
+}
+#buttonAvanti{
+background-image: url('img/avanti.png');
+position:relative;
+}
+#buttonInizia, #buttonAvanti{/*pulsante inattivo*/
+ margin: 3%;
+ width: 210px;
+ height: 33px;
+ background-position: 0 0;/*posizione immagine alle coordinate 0 0*/
+ background-repeat: no-repeat;/*l'immagine non deve ripetersi*/
+}
+#buttonInizia:hover{
+ background-image: url('img/iniziaHover.png');
+}
+#buttonAvanti:hover{
+ background-image: url('img/avantiHover.png');
+}
+#footer{
+padding-left: 43%;
+height:59px;
+background-image:url('img/footer.png');
+border-top: 1px solid #3E3A34;
+font-size: 1.1em;
+color: #CFCDC8;
+background-color: rgb(34, 110, 111);}
